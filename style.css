@@ -57,6 +57,11 @@ body{
     border: 1px solid var(--blue);
     box-shadow: 0px 0px 5px var(--blue);
     max-width: 75vw;
+    transition: 250ms;
+}
+
+.tweet-card:hover{
+    box-shadow: 0px 0px 10px var(--blue);
 }
 
 .title{
