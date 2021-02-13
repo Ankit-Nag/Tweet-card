@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+
+
+:root {
+    --blue: rgb(0, 122, 255);
+    --red: rgb(255, 59, 48);
+    --teal-solid: rgba(90, 200, 250);
+    --teal: rgba(90, 200, 250, 0.75);
+    --gray: rgb(99, 99, 102);
+    --white: rgb(242, 242, 247);
+    --black: rgb(28, 28, 30);
+    --silver: rgb(229, 229, 234);
+}
+
+h1,p{
+    margin: 0px;
+}
+
+button:focus{
+    outline: none;      
+    box-shadow: 0px 0px 3px var(--black);
+}
+
+button:hover{
+    box-shadow: 0px 0px 3px var(--black);
+    transition: 250ms;
+}
+
+button:active{
+    background-color: var(--teal-solid);
+}
+
+body{
+    background-color: var(--teal);
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5rem;
+}
+
+
+.like-icon{
+    max-height: 25px;
+}
+
+.main-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet-card{
+    background-color: var(--silver);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    box-shadow: 0px 0px 5px var(--blue);
+    max-width: 75vw;
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.profile-pic{
+    max-width: 75px;
+    border-radius: 50%;
+    border: 1px solid var(--blue);
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.user-details{
+    display: inline-flex wrap;
+    align-self: center;
+    margin-right: 10vw;
+    margin-top: 1rem;
+}
+
+#user-name {
+    display: inline;
+}
+
+#user-title {
+    margin-top: 0.3rem;
+    color: var(--gray);
+}
+
+.btn-follow {
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    margin-top: 1rem;
+    padding: 0 1.25rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    align-items: flex-end;
+    transition: 250ms;
+}
+
+.content{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.likes{
+    margin-top: 1rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.like-icon{
+    font-size: 1.5rem;
+}
+
+.like-num {
+    margin: 0.1rem 0.25rem;
+    display: inline;
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
+
+
